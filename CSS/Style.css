@@ -1,0 +1,98 @@
+:root{
+--og-clr: white;
+--highlight-clr: hsl(178, 100%, 50%);
+--main-clr:   hsl(215, 51%, 70%);
+}
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font: 'Abril Fatface', cursive;
+}
+
+.row{
+    width: 80%;
+    margin: auto;
+}
+.card{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: hsl(216, 50%, 16%);
+
+}
+.artwork{
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .5s ease;
+  }
+  .view{
+      /*Position*/
+      position: absolute;
+      width: auto;
+      height: 25vw;
+      left: 10px;
+      right: 10px;
+      
+      /*display*/
+      display: flex;
+      justify-content: center;
+      transition: 0.5s ease;
+
+      /*Style*/
+      opacity: 0;
+      border-radius: 5%;
+  }
+  .icon{
+      width: 20%;
+      object-fit: contain;
+      transition: 0.5s ease;
+}
+.card-footer{
+    background-color: hsl(216, 50%, 16%);
+    border-top: 0.2px solid var(--main-clr);
+    padding-left: 0;
+    padding-top: 20px;
+}
+.avatar{
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 0;
+}
+.btn{
+  padding: 0;
+  margin: 0;
+  color: var(--highlight-clr);
+
+}
+.date-time{
+    display: inline;
+    float: right;
+    font-size: 0.85em;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--og-clr);
+}
+p, time, small {
+    color: var(--main-clr);
+}
+h3, a:link, a:visited{
+    color: var(--og-clr);
+    text-decoration: none;
+}
+
+/*Active State*/
+.artwork:hover{
+    opacity: 0.5;
+}
+.view:hover{
+    opacity: 0.6;
+    background-color: var(--highlight-clr);
+     }
+a:hover, h3:hover{
+    color: var(--highlight-clr);
+}
+
